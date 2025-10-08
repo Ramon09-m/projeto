@@ -1,0 +1,102 @@
+.layout-container-produto {
+  background-color: #efefef;
+  font-family: "Lexend Giga", sans-serif;
+}
+
+.produto-container-produto {
+  max-width: 80vw;
+  margin-top: 1.5vw;
+  margin-left: 18vw;
+  border-radius: 1vw;
+  background-color: #efefef;
+}
+
+/* === Cabeçalho === */
+/* Cabeçalho em 3 colunas */
+.header-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 3 colunas */
+  align-items: center;
+  background-color: #fff;
+  padding: 1vw 1.5vw;
+  border-radius: 1vw;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.2vw;
+  font-size: 1vw;
+}
+
+/* Colunas */
+.header-col {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #333;
+  gap: 1.3vw;
+}
+
+.nome-col span {
+ margin-left: -4vw;
+ font-weight: 600;
+}
+
+.valor-col {
+  justify-content: flex-end;
+  margin-left: 3vw;
+  font-weight: 600;
+}
+
+
+/* === Caixa da tabela === */
+.tabela-produto {
+  background-color: #fff;
+  border-radius: 1vw;
+  padding: 1vw;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+
+  height: 32.5vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* === Tabela === */
+.tabela-produto table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1vw;
+}
+
+.tabela-produto td {
+  padding: 1vw 3vw;
+  margin-left: 2vw;
+
+  border-bottom: 0.1vw solid #e5e5e5;
+  color: #333;
+}
+
+.tabela-produto tr:hover {
+  background-color: #f9f9f9;
+  transition: background 0.2s ease;
+}
+
+/* Coluna código em vermelho */
+.codigo {
+  color: #e60000 !important;
+  font-weight: bolder;
+}
+
+/* Nome do produto como link */
+.link-produto {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.link-produto:hover {
+  color: #e60000;
+  text-decoration: none;
+}
+
+.preco {
+  font-weight: bolder;
+}
